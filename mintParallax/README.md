@@ -1,0 +1,36 @@
+# mintParallax.js
+视差效果组件，通过陀螺仪或光标位置实现。
+
+### Demo
+[Demo](http://tobie.cn/demo/topic/eye/)
+
+### 用法
+
+```js
+var mp = new mintParallax("#demo");
+```
+
+### 参数
+
+```html
+<div id="demo"
+     data-x-range="50"   /* optional, number */
+     data-y-range="100"   /* optional, number */
+     data-invert-x="true" /* optional, boolean */
+     data-invert-y="false" /* optional, boolean */
+>
+    <img src="fragment1.png" data-depth="0.0" /* required, 0.0~1.0 */ >
+    <img src="fragment2.png" data-depth="0.2">
+    <img src="fragment3.png" data-depth="0.4">
+    <img src="fragment4.png" data-depth="0.6">
+    <img src="fragment5.png" data-depth="0.8">
+    <img src="fragment6.png" data-depth="1.0">
+</div>
+```
+
+### Methods
+
+```js
+mp.enable();
+mp.disable();
+```
